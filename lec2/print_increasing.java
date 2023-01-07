@@ -1,5 +1,6 @@
-package lec1;
-public class print_decresing_5 {
+package lec2;
+
+public class print_incresing {
     public static void main(String args[])
     {
         int n=5;
@@ -11,7 +12,8 @@ public class print_decresing_5 {
         {   
             return ;
         }
-        System.out.println(n);
+        
         prn(n-1);
+        System.out.println(n);
     }
 }
