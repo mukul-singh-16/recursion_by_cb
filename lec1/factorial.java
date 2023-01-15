@@ -13,5 +13,4 @@ public class factorial {
         int fn=fact(n-1);
         return fn*n;
     }
-    
 }

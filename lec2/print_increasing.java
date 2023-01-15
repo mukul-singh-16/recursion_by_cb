@@ -1,6 +1,6 @@
 package lec2;
 
-public class print_incresing {
+public class print_increasing {
     public static void main(String args[])
     {
         int n=5;

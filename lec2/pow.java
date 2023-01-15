@@ -3,7 +3,7 @@ package lec2;
 public class pow {
     public static void main(String[] args) {
         int a=2;
-        int b=30;
+        int b=5;
         System.out.println(pow(a,b));
     }
     public static int pow(int a ,int b)
