@@ -1,5 +1,5 @@
 package lec4;
-
+//two H not came together
 public class cointoswithoutdublicate {
     public static void main(String[] args) {
         int n=3;

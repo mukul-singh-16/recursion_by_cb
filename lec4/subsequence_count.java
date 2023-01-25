@@ -12,7 +12,7 @@ public class subsequence_count {
 		if(s.length()==0)
 		{
 			System.out.println(ans);
-            System.out.println(count);
+            // System.out.println(count);
 			return count+1;
 		}
 		char ch=s.charAt(0);

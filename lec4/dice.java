@@ -4,7 +4,7 @@ public class dice {
     public static void main(String[] args) {
         int n=4;
         int start=0;
-        int end=6;
+        int end=3;
         dicefun(start, end,"");
     }
     public static void dicefun(int start,int end, String ans)
