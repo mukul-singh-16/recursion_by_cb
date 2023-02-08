@@ -1,9 +1,9 @@
-package lec7;
+package lec6;
 class tower_of_hanoi
 {
     public static void main(String[] args) {
-        int n = 3;
-		toh(n, "A", "B", "C");
+        int n = 2;
+		toh(n, "src", "hlp", "dest");
     }
     public static void toh(int n,String s,String h,String d)
     {
