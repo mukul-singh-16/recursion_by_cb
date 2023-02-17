@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch merge_sorted_array",
+            "request": "launch",
+            "mainClass": "string_builder.merge_sorted_array",
+            "projectName": "recursion_by_cb_1046be91"
+        },
+        {
+            "type": "java",
             "name": "Launch builder_demo2",
             "request": "launch",
             "mainClass": "string_builder.builder_demo2",
