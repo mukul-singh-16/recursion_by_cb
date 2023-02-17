@@ -14,7 +14,5 @@ public class cointos {
         tos(n-1,s+"H");
         tos(n-1,s+"T");
     }
-    
-    
 }
 

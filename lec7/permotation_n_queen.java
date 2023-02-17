@@ -1,4 +1,4 @@
-package lec6;
+
 
 public class permotation_n_queen {
     public static void main(String[] args)

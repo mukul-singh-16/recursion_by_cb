@@ -1,6 +1,8 @@
+package lec9;
+// confusion
 import java.util.*;
 
-public class Main {
+public class raat_maze {
     public static void Display(int[][] ans) {
 
         for (int k = 0; k < ans.length; k++) {
@@ -34,31 +36,32 @@ public class Main {
     static boolean f = false;
 
     public static void print_path(char[][] maze, int current_col, int curent_row, int[][] ans) {
+        if (f == false) {
+            if (curent_row == maze.length - 1 && current_col == maze[0].length - 1) {
+                ans[curent_row][current_col] = 1;
+                Display(ans);
+                f = true;
+                return;
+            }
 
-        if (curent_row == maze.length - 1 && current_col == maze[0].length - 1
-                && maze[curent_row][current_col] != 'X') {
+            if (curent_row >= maze.length || current_col >= maze[0].length
+                    || maze[curent_row][current_col] == 'X') {
+                return;
+            }
+
+            maze[curent_row][current_col] = 'X';
             ans[curent_row][current_col] = 1;
-            Display(ans);
-            f = true;
-            return;
+            int r[] = { 1, 0 };
+            int c[] = { 0, 1 };
+            // int r[] = { -1, 1, 0, 0 };
+            // int c[] = { 0, 0, -1, 1 };
+
+            for (int i = 0; i < c.length; i++) {
+                print_path(maze, current_col + c[i], curent_row + r[i], ans);
+            }
+
+            maze[curent_row][current_col] = 'O';
+            ans[curent_row][current_col] = 0;
         }
-
-        if (curent_row < 0 || current_col < 0 || curent_row >= maze.length || current_col >= maze[0].length
-                || maze[curent_row][current_col] == 'X') {
-
-            return;
-        }
-        maze[curent_row][current_col] = 'X';
-        ans[curent_row][current_col] = 1;
-        int r[] = { -1, 1, 0, 0 };
-        int c[] = { 0, 0, -1, 1 };
-
-        for (int i = 0; i < c.length; i++) {
-            print_path(maze, current_col + c[i], curent_row + r[i], ans);
-        }
-
-        maze[curent_row][current_col] = 'O';
-        ans[curent_row][current_col] = 0;
-
     }
 }

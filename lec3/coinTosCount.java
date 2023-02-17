@@ -1,4 +1,4 @@
-package lec4;
+package lec3;
 
 public class coinTosCount {
     public static void main(String[] args) {

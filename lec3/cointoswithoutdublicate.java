@@ -1,4 +1,4 @@
-package lec4;
+package lec3;
 //two H not came together
 public class cointoswithoutdublicate {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class cointoswithoutdublicate {
         }
         if(s.length()==0||(s.charAt(s.length()-1)!='H'))
         cointos(n-1,s+"H");
+        // if(s.length()==0||(s.charAt(s.length()-1)!='T'))
         cointos(n-1,s+"T");
     }
     

@@ -1,4 +1,4 @@
-package lec6;
+
 
 public class queen_combination {
     public static void main(String[] args)

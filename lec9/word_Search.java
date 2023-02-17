@@ -1,4 +1,4 @@
-package lec8;
+package lec9;
 public class word_Search {
 
 	public static void main(String[] args) {
@@ -29,8 +29,8 @@ public class word_Search {
 			return false;
 		}
 
-		int[] r = { -1, 1, 0, 0, -1, 1, 1, -1 };
-		int[] c = { 0, 0, 1, -1, 1, 1, -1, -1 };
+		int[] r = { -1, 1, 0, 0 };
+		int[] c = { 0, 0, 1, -1 };
 		maze[cr][cc] = '*';
         boolean ans=false;
 		for (int i = 0; i < c.length; i++) {

@@ -1,10 +1,8 @@
-import lec6.permotation_n_queen;
-
 public class infinite_coin_combination {
     // permotation
     public static void main(String[] args)
     {
-        int arr[]={2,3,5,6};
+        int arr[]={2,3,5};
         int n=10;
         coin(arr,n,"");
     }

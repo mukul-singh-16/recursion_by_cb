@@ -4,7 +4,7 @@ public class permotation_of_string {
     
     public static void main(String[] args) {
         // String abcdef;
-        sequence("abc", "");
+        sequence("0-11", "");
     }
     public static void sequence(String ques,String ans)
     {
